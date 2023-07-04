@@ -1,0 +1,17 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.edu.ifsuldeminas.mch.cuidemaisapp.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="collapseActionView" />
+
+<!--    <item-->
+<!--        android:id="@+id/action_notificar"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="Notificar"-->
+<!--        app:showAsAction="collapseActionView" />-->
+</menu>

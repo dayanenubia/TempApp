@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TempShield</string>
+    <string name="action_settings">Configurações</string>
+    <string name="start_service">Iniciar Servico</string>
+    <string name="cuide_mais_service_title">Cuide Mais App</string>
+    <string name="cuide_mais_service_message">Monitoramento ativado</string>
+    <string name="stop_service">Parar o servico</string>
+    <string name="monitoring_status">Monitoramento</string>
+    <string name="switch_monitoring_set_checked_message">Use a tela de configuracoes para iniciar ou parar o servico</string>
+</resources>
