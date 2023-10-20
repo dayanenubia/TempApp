@@ -9,7 +9,7 @@ public class MonitorSaude extends APIMonitor {
 
     private enum Limits {
         //DIAPER_HUMIDITY_PERCENT(18),
-        ENVIRONMENT_TEMPERATUE_C (15);
+        ENVIRONMENT_TEMPERATUE_C (8);
         //ENVIRONMENT_HUMIDITY(60);
 
         private int limit;
@@ -30,9 +30,9 @@ public class MonitorSaude extends APIMonitor {
     @Override
     protected void monitor() {
         while (shouldRun()) {
-            String msg = "Atenção requerida!\n";
+            String msg = "Atenção! Variação de temperatura!\n";
             //String diaperHumidityMsg = msg.concat("Umidade da frauda em %d%%");
-            String environmentTemperatureMsg = msg.concat("Temperatura ambiente em %dºC");
+            String environmentTemperatureMsg = msg.concat("Temperatura do Refrigerador em %dºC");
             //String environmentHumidityMsg = msg.concat("Umidade do ambiente em %d%%");
 
             CuideMaisAPI cuideMaisAPI = new CuideMaisAPI();
@@ -55,7 +55,7 @@ public class MonitorSaude extends APIMonitor {
 
     private void sleepOneMinute() {
         try {
-            Thread.sleep(30000); /* milisgundos */
+            Thread.sleep(120000); /* milisgundos */
         } catch (InterruptedException e) {}
     }
 }

@@ -56,8 +56,8 @@ public class ForegrowndService extends Service {
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle(getString(R.string.cuide_mais_service_title))
                 .setContentText(getString(R.string.cuide_mais_service_message))
-                .setSmallIcon(R.drawable.logo)
-                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo_green))
+                .setSmallIcon(R.drawable.logo_app)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo_app))
                 .setContentIntent(pendingIntent)
                 .setColor(getResources().getColor(R.color.purple_200))
                 .build();
